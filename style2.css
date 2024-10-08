@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.wrapper {
+    position: relative;
+}
+
+header {
+    position: relative;
+    text-align: left;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('12.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Blurring the background */
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    width: 100%;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 2; /* Keeps it above other elements */
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+.logo-image {
+    height: 50px; /* Adjust the height of the logo */
+}
+
+.nav-links {
+    margin-left: auto; /* Push the nav links to the right */
+}
+
+nav ul li.nav-links {
+    margin: 0; /* Ensures links stay in place */
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 5em; /* Adjust for a better visual hierarchy */
+    text-align: left;
+    padding-left: 1em;
+}
+
+.slogan {
+    font-size: 1.5em;
+    color: antiquewhite;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 3.2em;
+}
+
+/* Main section styling */
+main {
+    padding: 3em 1.5em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #008b15;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* Footer styling */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-align: left;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
